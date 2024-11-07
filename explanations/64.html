@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>GRATEX 64</h1>
+<p>2024/5/22</p>
+<a href = "/one-liners/images/GRATEX%20(64).png">
+<img src = "/one-liners/images/GRATEX%20(64).png" width = 400 height = 225>
+</a>
+<p>
+This graph is relatively easy to wrap your head around.<br>
+Points can be thought of as a distance from the origin and an angle to the x-axis.<br>
+In the case of this graph, it is plotting every point (r,θ) for which θ &lt; π sin r.<br>
+Looking closely, it's the positive part of a sine wave wrapped around so that it covers the entire graph.
+</p>
+<!-- TODO add image-->
+<p>
+Those of you who have used Desmos before may have noticed something strange, though.<br>
+Desmos cannot plot graphs of polar equations that are nonlinear in r.<br>
+So how was this plotted?
+</p>
+<!-- TODO add image-->
+<p>
+Depending on where you live, you may already be familiar with these substitutions.<br>
+The distance a point is from the origin (which is assigned as r here) is equivalent to √x²+y².<br>
+The angle of a point to the x-axis is usually taught as atan(y/x), but this runs into issues I struggle to explain.<br>
+The programmers will recognize this problem, and will know about atan2(). Desmos has this built into the arctangent function.
+</p>
+<a href = "/one-liners/index.html">Back</a>
+</body>
+</html>
